@@ -1,0 +1,26 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Wed Feb 26 21:13:37 2020
+
+@author: felipe
+"""
+list = [1, 2, 3]
+a, b, c = list
+
+list2 = [4, 5, 6]
+a, b, c = list2
+
+def comparaLista(list, list2):
+    print(list == list2)
+    
+def verificaString(palindrome):
+    palindrome = ''.join(palindrome.split())
+    
+    print(palindrome.lower() == palindrome[::-1].lower())
+        
+verifica = comparaLista(list, list2)
+
+verificaString('Luz AZuL')
+    
+
